@@ -17,6 +17,7 @@
 }
 
 
+
 /* Dark Mode */
 .dark#index_page {
     color: var(--color-light-50);
@@ -24,10 +25,14 @@
     animation: light-to-dark-background 0.3s ease-in-out;
 }
 
-.dark#index_page .input-field input,
-.dark#index_page .input-field i {
+.dark#index_page .dark-light{
     color: var(--color-light-50);
 }
+
+.dark#index_page .light-dark{
+    color: var(--color-dark-900);
+}
+
 
 /* Responsividade */
 @media screen and (min-width: 50px) and (max-width: 500px) {
