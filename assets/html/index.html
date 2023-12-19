@@ -13,19 +13,23 @@
 </head>
 
 <body id="index_page">
-  <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
-    <a href='/assets/html/index.html'>
-      <div class='flex text-4xl font-bold'>
-        <h1>Algo</h1>
-        <h1 class='text-rose-500'>View</h1>
+  <!-- Navbar -->
+  <header>
+    <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
+      <a href='/assets/html/index.html'>
+        <div class='flex text-4xl font-bold'>
+          <h1>Algo</h1>
+          <h1 class='text-rose-500'>View</h1>
+        </div>
+      </a>
+      <div class='flex gap-5'>
+        <button id="mode_button" class='p-1 h-10 w-9 text-zinc-900 bg-slate-100 rounded-lg hover:bg-slate-400'>
+          <i id="mode_icon" class="fa-solid fa-moon"></i>
+        </button>
       </div>
-    </a>
-    <div class='flex gap-5'>
-      <button id="mode_button" class='p-1 h-10 w-9 text-zinc-900 bg-slate-100 rounded-lg hover:bg-slate-400'>
-        <i id="mode_icon" class="fa-solid fa-moon"></i>
-      </button>
     </div>
-  </div>
+  </header>
+  <!-- Banner -->
   <svg class="pb-6 max-w-full h-auto max-h-auto" width="100%" height="513" viewBox="0 0 1512 513" fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <path
@@ -1469,7 +1473,55 @@
       </linearGradient>
     </defs>
   </svg>
-
+  <!-- Cards -->
+  <div class="flex-col my-11 font-montserrat">
+    <div class="mb-8 flex gap-2 text-4xl justify-center font-bold">
+      <h2 class="text-zinc-900">Estruturas de</h2>
+      <h2 class="text-rose-500">Dados</h2>
+    </div>
+    <div id="display-cards" class="grid grid-cols-4 gap-8 justify-items-center mx-7">
+      <a href="/pilhas"
+        class="bg-amber-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-amber-600">
+        <div class="bg-amber-600 w-full h-10 flex justify-around pt-2 rounded-md">Pilhas</div>
+        <img src="/assets/img/Pilhas.png" alt="Pilhas">
+      </a>
+      <a href="/heaps"
+        class="bg-violet-500  text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-violet-600">
+        <div class="bg-violet-600 w-full h-10 flex justify-around pt-2 rounded-md">Heaps</div>
+        <img src="/assets/img/Heaps.png" alt="Heaps">
+      </a>
+      <a href="/vetores"
+        class="bg-teal-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-teal-600">
+        <div class="bg-teal-600 w-full h-10 flex justify-around pt-2 rounded-md">Vetores</div>
+        <img src="/assets/img/Vetor.png" alt="Vetores">
+      </a>
+      <a href="/listas"
+        class="bg-rose-400 h-60 w-full text-slate-100 grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-rose-500">
+        <div class="bg-rose-500 w-full h-10 flex justify-around pt-2 rounded-md">Listas</div>
+        <img src="/assets/img/Listas.png" alt="Listas">
+      </a>
+      <a href="/grafos"
+        class="bg-teal-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-teal-600">
+        <div class="bg-teal-600 w-full h-10 flex justify-around pt-2 rounded-md">Grafos</div>
+        <img src="/assets/img/Grafos.png" alt="Grafos">
+      </a>
+      <a href="/arvores"
+        class="bg-rose-400 h-60 w-full text-slate-100 grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-rose-500">
+        <div class="bg-rose-500 w-full h-10 flex justify-around pt-2 rounded-md">Árvores</div>
+        <img src="/assets/img/Arvore.png" alt="Árvores">
+      </a>
+      <a href="/hashtables"
+        class="bg-amber-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-amber-600">
+        <div class="bg-amber-600 w-full h-10 flex justify-around pt-2 rounded-md">Hash Tables</div>
+        <img src="/assets/img/Hash.png" alt="Hash">
+      </a>
+      <a href="/filas"
+        class="bg-violet-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-violet-600 ">
+        <div class="bg-violet-600 w-full h-10 flex justify-around pt-2 rounded-md">Filas</div>
+        <img src="/assets/img/Fila.png" alt="Filas>
+      </a>
+    </div>
+  </div>
   <script type="text/javascript" src="/assets/script/index.js"></script>
 </body>
 

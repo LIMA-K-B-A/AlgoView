@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./assets/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'montserrat': ['Montserrat'],
+      }
+    },
   },
   plugins: [],
 }

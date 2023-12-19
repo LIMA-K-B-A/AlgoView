@@ -8,8 +8,8 @@
     --color-dark-100: #242424;
     --color-dark-900: #000;
 }
-    
-/* General */
+
+/* Geral */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@
     color: var(--color-light-50);
 }
 
-
+/* Responsividade */
 @media screen and (min-width: 50px) and (max-width: 500px) {
     #central-cards {
       grid-template-columns: repeat(1, minmax(0, 1fr));
