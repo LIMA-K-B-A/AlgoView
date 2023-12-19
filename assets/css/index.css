@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+:root {
+    /* Light */
+    --color-light-50: #f8fafc;
+
+    /* Dark */
+    --color-dark-50: #797984;
+    --color-dark-100: #242424;
+    --color-dark-900: #000;
+}
+    
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Dark Mode */
+.dark#index_page {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#index_page .input-field input,
+.dark#index_page .input-field i {
+    color: var(--color-light-50);
+}
+
+
+@media screen and (min-width: 50px) and (max-width: 500px) {
+    #central-cards {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (min-width: 100px) and (max-width: 640px) {
+    #display-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  } 
