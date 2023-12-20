@@ -31,6 +31,15 @@
     color: var(--color-dark-900);
 }
 
+.dark#index_page .bg-light-dark{
+    background-color: var(--color-dark-100);
+}
+
+.dark#index_page .bg-dark-light{
+  background-color: var(--color-light-50);
+}
+
+/* Cards dos Conceitos Iniciais */
 .cards{
   display: flex;
   justify-items: center;
