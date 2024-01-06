@@ -1,3 +1,5 @@
+@import url(/assets/css/pilhas.css);
+@import url(/assets/css/vetor.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 :root {
     /* Light */
@@ -67,7 +69,7 @@
 }
 
 .h2-style{
-  margin-top: 4%;
+  margin: 10px;
   display: flex;
   justify-content: center;
   color: #000;
@@ -93,16 +95,27 @@
 /* Footer*/
 .footer{
   width: 100%;
-  height: 50px;
+  height: 2.5rem;
+  bottom: 0;
   flex-shrink: 0;
   display: flex;
   justify-content: end;
+  position: absolute;
 }
 
 .text-footer{
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* altura do rodapé */
 }
 
 /* Responsividade */

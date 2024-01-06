@@ -38,8 +38,8 @@
     <div id="page-container">
       <div id="content-wrap">
 
-    <h1 class="titulo">Estrutura de Dados: Pilhas</h1>
-    <div class="amostra">
+    <h1 class="titulo">Estrutura de Dados: Vetor</h1>
+    <div class="amostravetor">
     <div class="pilhas">1</div>
     <div class="pilhas">2</div>
     <div class="pilhas">3</div>
@@ -47,28 +47,22 @@
   </div>
 
     <div class="paragrafo">
-      <h2 class="h2-style">Sobre as Pilhas</h2>
+      <h2 class="h2-style">Sobre os Vetores</h2>
     <p>
-      Pilhas em programação são como empilhar pratos. Você adiciona um
-      novo prato no topo e sempre pega o prato do topo. Isso segue o
-      princípio "último a entrar, primeiro a sair" (LIFO). Em programação,
-      usamos pilhas para coisas como desfazer ações, onde queremos voltar
-      à última ação realizada. Elas são úteis quando a ordem inversa de
-      processamento é importante. Por exemplo, se você está fazendo uma
-      lista e quer retirar o último item que adicionou, uma pilha seria
-      útil. Basicamente, pilhas são como uma pilha de pratos onde você
-      sempre mexe no último prato que colocou
+        Vetores, na programação, são estruturas que armazenam elementos de forma sequencial em posições contíguas de memória. Seguindo o princípio "índice zero", cada elemento é acessado por um número inteiro que representa sua posição. Essa característica facilita a recuperação eficiente de dados. Vetores são úteis para armazenar coleções ordenadas de informações, como listas de números, caracteres ou objetos. A alocação contígua de memória permite acesso direto aos elementos, tornando as operações de leitura e escrita eficientes. No entanto, a inserção ou remoção de elementos no meio do vetor pode exigir realocações. Em resumo, vetores oferecem uma estrutura simples e eficaz para armazenar e manipular dados sequenciais em programação.
     </p>
   </div>
 
-    <div class="estruturaPilhas">
+
+
+    <div class="estruturaVetor">
         <div class="buttons">
-          <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
-          <button id="removerBtn" onclick="removerElemento()">Remover</button>
-          <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
+            <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
+            <button id="removerBtn" onclick="removerElemento()">Remover</button>
+            <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
         </div>
-        <div class="stack" id="stack"></div>
-      </div>
+    </div>
+    <div class="vector" id="vector"></div>
 
       <!-- Footer-->
   <footer>
@@ -88,7 +82,7 @@
   </div>
   </div>
   
-    <script src="/assets/script/pilhas.js"></script>
+    <script src="/assets/script/vetor.js"></script>
 </body>
 
 </html> 
