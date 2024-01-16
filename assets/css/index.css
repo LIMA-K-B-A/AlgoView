@@ -1,5 +1,6 @@
 @import url(/assets/css/pilhas.css);
 @import url(/assets/css/vetor.css);
+@import url(/assets/css/listas.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 :root {
     /* Light */
@@ -39,6 +40,12 @@
 
 .dark#index_page .bg-dark-light{
   background-color: var(--color-light-50);
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+
 }
 
 /* Cards dos Conceitos Iniciais */
