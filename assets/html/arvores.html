@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoView</title>
+    <link rel="icon" href="/assets/img/logo_av.png" type="image/x-icon">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
+            <a href='/assets/html/index.html'>
+                <div class='flex text-4xl font-bold'>
+                    <h1>Algo</h1>
+                    <h1 class='text-rose-500'>View</h1>
+                </div>
+            </a>
+            <div class='flex gap-5'>
+                <button id="mode_button" class='p-1 h-10 w-9 text-zinc-900 bg-slate-100 rounded-lg hover:bg-slate-400'>
+                    <i id="mode_icon" class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+
+                <h1 class="titulo">Estrutura de Dados: Árvores</h1>
+                <div class="flex items-center justify-center">
+                    <img class="heaps-img" src="/assets/img/Arvore-1.png" alt="Heaps" width="800" height="900">
+                </div>
+
+
+                <div class="paragrafo">
+                    <h2 class="h2-style">Sobre as Árvores</h2>
+                    <p>
+                        Árvores em estruturas de dados são como a hierarquia familiar. Há um nó principal (ou raiz) que
+                        se ramifica em outros nós, criando uma estrutura arborescente. Em programação, árvores são
+                        usadas para organizar dados de maneira hierárquica, sendo úteis em situações em que é necessário
+                        representar relações pai-filho. Por exemplo, em um sistema de arquivos, as árvores são ideais
+                        para representar a estrutura de diretórios e arquivos.
+                    </p>
+                </div>
+
+                <div class="estruturaArvores">
+                    <div class="buttons">
+                        <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
+                        <button id="removerBtn" onclick="removerElemento()">Remover</button>
+                        <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
+                    </div>
+                    <div class="stack" id="stack"></div>
+                </div>
+
+                <!-- Footer-->
+                <footer>
+                    <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
+
+                        <a href="/sobre" class="text-footer">
+                            Sobre
+                        </a>
+                        <a href="/sobre" class="text-footer">
+                            Equipe
+                        </a>
+                        <a href="/sobre" class="text-footer">
+                            Termos de Uso
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/assets/script/arvores.js"></script>
+    </body>
+
+</html>
