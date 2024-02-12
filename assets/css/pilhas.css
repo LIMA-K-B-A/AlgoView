@@ -30,20 +30,6 @@
     font-family: Montserrat;
   }
 
-  .paragrafo {
-    width:auto;
-    height: auto;
-    margin: 50px;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #d1d1d1;
-    background: #FFF;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-  }
-
   .amostra {
     display: flex;
     flex-direction: column;
