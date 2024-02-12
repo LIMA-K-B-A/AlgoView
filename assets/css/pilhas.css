@@ -10,20 +10,12 @@
         line-height: normal
     }
     
-    .estruturaPilhas {
+  .estruturaPilhas {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
     }
-
-  .stack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 
   .square {
     width: 50px;
@@ -36,36 +28,6 @@
     border-radius: 10%;
     font-size: 18px;
     font-family: Montserrat;
-  }
-
-  .buttons {
-    display: flex;
-    margin-top: 20px;
-  }
-
-  button {
-    margin: 0 5px;
-    padding: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10%;
-    font-family: Montserrat;
-  }
-
-  #inserirBtn {
-    background-color: #EE577C; /* Rosa */
-    color: white;
-  }
-
-  #removerBtn {
-    background-color: #19B39A; /* Verde */
-    color: white;
-  }
-
-  #procurarBtn {
-    background-color: #9655B4; /* Lilás */
-    color: white;
   }
 
   .paragrafo {

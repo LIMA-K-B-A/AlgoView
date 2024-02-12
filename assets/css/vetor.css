@@ -28,31 +28,3 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .buttons {
-    display: flex;
-    margin-top: 20px;
-  }
-  
-  button {
-    margin: 0 5px;
-    padding: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-  }
-  
-  #inserirBtn {
-    background-color: #EE577C; /* Rosa */
-    color: white;
-  }
-  
-  #removerBtn {
-    background-color: #19B39A; /* Verde */
-    color: white;
-  }
-  
-  #procurarBtn {
-    background-color: #9655B4; /* Lilás */
-    color: white;
-  }
