@@ -38,11 +38,16 @@
   margin-top: 20px;
 }
 
+#outraPilha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .group {
   display: flex;
   align-items: center;
   margin: 0 5px;
-  /* Espaçamento entre os grupos */
 }
 
 .listas {
@@ -58,8 +63,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
+
 
 .ponteiro {
   color: #211E1E;

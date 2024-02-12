@@ -1,19 +1,19 @@
-const stack = [];
+const outraPilha = [];
 
 function atualizarPilha() {
-    const stackDiv = document.getElementById('stack');
-    stackDiv.innerHTML = '';
+    const outraPilhaDiv = document.getElementById('outraPilha');
+    outraPilhaDiv.innerHTML = '';
     
-    // Adiciona o estilo 'display: flex;' à stackDiv
-    stackDiv.style.display = 'flex';
+    // Adiciona o estilo 'display: flex;' à outraPilhaDiv
+    outraPilhaDiv.style.display = 'flex';
 
-    for (let i = 0; i < stack.length; i++) {
+    for (let i = 0; i < outraPilha.length; i++) {
         const groupDiv = document.createElement('div');
         groupDiv.classList.add('group');
 
         const square = document.createElement('div');
         square.classList.add('listas');
-        square.innerText = stack[i];
+        square.innerText = outraPilha[i];
         groupDiv.appendChild(square);
 
         const pointer = document.createElement('div');
@@ -30,11 +30,11 @@ function atualizarPilha() {
 
         groupDiv.appendChild(arrowAndNullDiv);
 
-        stackDiv.appendChild(groupDiv);
+        outraPilhaDiv.appendChild(groupDiv);
     }
 
     // Adiciona div 'null' à direita da seta (arrow)
-    if (stack.length > 0) {
+    if (outraPilha.length > 0) {
         const nullSquare = document.createElement('div');
         nullSquare.classList.add('listas');
         nullSquare.innerText = 'null';
@@ -42,19 +42,19 @@ function atualizarPilha() {
         const arrowAndNullDiv = document.createElement('div');
         arrowAndNullDiv.appendChild(nullSquare);
 
-        stackDiv.appendChild(arrowAndNullDiv);
+        outraPilhaDiv.appendChild(arrowAndNullDiv);
     }
 }
 
 function inserirElemento() {
     const novoElemento = Math.floor(Math.random() * 100);
-    stack.push(novoElemento);
+    outraPilha.push(novoElemento);
     atualizarPilha();
 }
 
 function removerElemento() {
-    if (stack.length > 0) {
-        stack.pop();
+    if (outraPilha.length > 0) {
+        outraPilha.pop();
         atualizarPilha();
     } else {
         alert('A pilha está vazia!');
@@ -63,7 +63,7 @@ function removerElemento() {
 
 function procurarElemento() {
     const elementoProcurado = prompt('Digite o elemento a ser procurado:');
-    const index = stack.indexOf(parseInt(elementoProcurado));
+    const index = outraPilha.indexOf(parseInt(elementoProcurado));
 
     if (index !== -1) {
         alert(`Elemento ${elementoProcurado} encontrado na posição ${index + 1}`);
@@ -72,5 +72,5 @@ function procurarElemento() {
     }
 }
 
-// Chamando a função inicialmente para exibir a pilha vazia
+// Chamando a função inicialmente para exibir a outraPilha vazia
 atualizarPilha();
