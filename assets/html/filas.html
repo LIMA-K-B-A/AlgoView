@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoView</title>
+    <link rel="icon" href="/assets/img/logo_av.png" type="image/x-icon">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
+            <a href='/assets/html/index.html'>
+                <div class='flex text-4xl font-bold'>
+                    <h1>Algo</h1>
+                    <h1 class='text-rose-500'>View</h1>
+                </div>
+            </a>
+            <div class='flex gap-5'>
+                <button id="mode_button" class='p-1 h-10 w-9 text-zinc-900 bg-slate-100 rounded-lg hover:bg-slate-400'>
+                    <i id="mode_icon" class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+
+                <h1 class="titulo">Estrutura de Dados: Filas</h1>
+                <div class="flex items-center justify-center">
+                    <img class="heaps-img" src="/assets/img/Fila-1.png" alt="Grafos" width="800" height="900">
+                </div>
+
+
+                <div class="paragrafo">
+                    <h2 class="h2-style">Sobre as Filas</h2>
+                    <p>
+                        Filas em programação são semelhantes a esperar em uma fila para um caixa. A ideia é que o
+                        primeiro elemento a entrar na fila será o primeiro a ser atendido, seguindo o princípio
+                        "primeiro a entrar, primeiro a sair" (FIFO). Em programação, filas são utilizadas em situações
+                        em que a ordem de chegada dos elementos é crucial. Por exemplo, em simulações de processos em
+                        tempo real, onde os eventos devem ser processados na ordem em que ocorrem. Filas são úteis
+                        quando precisamos garantir uma execução sequencial das tarefas. Assim como em uma fila física, o
+                        elemento que chega primeiro é o primeiro a ser processado.
+                    </p>
+                </div>
+
+                <div class="estruturaFilas">
+                    <div class="buttons">
+                        <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
+                        <button id="removerBtn" onclick="removerElemento()">Remover</button>
+                        <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
+                    </div>
+                    <div class="stack" id="stack"></div>
+                </div>
+
+                <!-- Footer-->
+                <footer>
+                    <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
+
+                        <a href="/sobre" class="text-footer">
+                            Sobre
+                        </a>
+                        <a href="/sobre" class="text-footer">
+                            Equipe
+                        </a>
+                        <a href="/sobre" class="text-footer">
+                            Termos de Uso
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/assets/script/filas.js"></script>
+    </body>
+
+</html>
