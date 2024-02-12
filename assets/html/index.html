@@ -16,123 +16,125 @@
 <body id="index_page">
   <div id="page-container">
     <div id="content-wrap">
-  <!-- Navbar -->
-  <header>
-    <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
-      <a href='/assets/html/index.html'>
-        <div class='flex text-4xl font-bold'>
-          <h1>Algo</h1>
-          <h1 class='text-rose-500'>View</h1>
+      <!-- Navbar -->
+      <header>
+        <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
+          <a href='/assets/html/index.html'>
+            <div class='flex text-4xl font-bold'>
+              <h1>Algo</h1>
+              <h1 class='text-rose-500'>View</h1>
+            </div>
+          </a>
+          <div class='flex gap-5'>
+            <button id="mode_button" class='p-1 h-10 w-9 text-zinc-900 bg-slate-100 rounded-lg hover:bg-slate-400'>
+              <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </button>
+          </div>
         </div>
-      </a>
-      <div class='flex gap-5'>
-        <button id="mode_button" class='p-1 h-10 w-9 text-zinc-900 bg-slate-100 rounded-lg hover:bg-slate-400'>
-          <i id="mode_icon" class="fa-solid fa-moon"></i>
-        </button>
+      </header>
+
+      <!-- Banner -->
+      <img class="banner" src="/assets\img\banner.svg">
+
+      <!-- Central Cards -->
+      <div id="central-cards" class="flex-col">
+        <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
+          <h2 class="text-zinc-900 dark-light">Conceitos</h2>
+          <h2 class="text-rose-500">Iniciais</h2>
+        </div>
+
+        <div class="container cards ">
+          <div class="conceito-1 bg-light-dark">
+            <h2 class="h2-style dark-light">O que é uma estrutura de dados?</h2>
+            <p class="paragrafo-style dark-light">Uma estrutura de dados é como um método organizado para armazenar
+              dados de forma
+              eficiente. É como um formato especial que facilita a organização, manipulação e acesso dos dados, cada uma
+              com
+              suas próprias regras e métodos para operações como inserção, remoção e busca.</p>
+          </div>
+
+          <div class="conceito-2 bg-light-dark">
+            <h2 class="h2-style dark-light">O que é uma estrutura de dados?</h2>
+            <p class="paragrafo-style dark-light">
+              1. LIFO (Last In, First Out):
+              <br>Funciona como uma pilha de pratos.
+              <br>O último elemento adicionado é o primeiro a ser removido.
+              <br>É útil para rastrear a ordem em que as coisas acontecem, como desfazer ações.
+              <br>2. FIFO (First In, First Out):
+              <br>Segue a lógica de uma fila, como esperar em uma fila.
+              <br>O primeiro elemento adicionado é o primeiro a ser removido.
+              <br>É usado quando a ordem de chegada é importante, como em simulações de processos ou tarefas em fila.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
 
-  <!-- Banner -->
-  <img class="banner" src="/assets\img\banner.svg">
-
-  <!-- Central Cards -->
-  <div id="central-cards" class="flex-col">
-    <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
-      <h2 class="text-zinc-900 dark-light">Conceitos</h2>
-      <h2 class="text-rose-500">Iniciais</h2>
-    </div>
-
-    <div class="container cards ">
-      <div class="conceito-1 bg-light-dark">
-        <h2 class="h2-style dark-light">O que é uma estrutura de dados?</h2>
-        <p class="paragrafo-style dark-light">Uma estrutura de dados é como um método organizado para armazenar dados de forma
-          eficiente. É como um formato especial que facilita a organização, manipulação e acesso dos dados, cada uma com
-          suas próprias regras e métodos para operações como inserção, remoção e busca.</p>
+      <!-- Cards -->
+      <div class="flex-col my-11 font-montserrat">
+        <div class="mb-8 flex gap-2 text-4xl justify-center font-bold">
+          <h2 class="text-zinc-900 dark-light">Estruturas de</h2>
+          <h2 class="text-rose-500">Dados</h2>
+        </div>
+        <div id="display-cards" class="grid grid-cols-4 gap-8 justify-items-center mx-7">
+          <a href="/assets/html/pilhas.html"
+            class="bg-amber-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-amber-600">
+            <div class="bg-amber-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Pilhas</div>
+            <img src="/assets/img/Pilhas.png" alt="Pilhas">
+          </a>
+          <a href="/assets/html/heaps.html"
+            class="bg-violet-500  text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-violet-600">
+            <div class="bg-violet-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Heaps</div>
+            <img src="/assets/img/Heaps.png" alt="Heaps">
+          </a>
+          <a href="/assets/html/vetor.html"
+            class="bg-teal-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-teal-600">
+            <div class="bg-teal-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Vetores</div>
+            <img src="/assets/img/Vetor.png" alt="Vetores">
+          </a>
+          <a href="/assets/html/listas.html"
+            class="bg-rose-400 h-60 w-full text-slate-100 grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-rose-500">
+            <div class="bg-rose-500 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Listas</div>
+            <img src="/assets/img/Listas.png" alt="Listas">
+          </a>
+          <a href="/assets/html/grafos.html"
+            class="bg-teal-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-teal-600">
+            <div class="bg-teal-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Grafos</div>
+            <img src="/assets/img/Grafos.png" alt="Grafos">
+          </a>
+          <a href="/arvores"
+            class="bg-rose-400 h-60 w-full text-slate-100 grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-rose-500">
+            <div class="bg-rose-500 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Árvores</div>
+            <img src="/assets/img/Arvore.png" alt="Árvores">
+          </a>
+          <a href="/hashtables"
+            class="bg-amber-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-amber-600">
+            <div class="bg-amber-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Hash Tables</div>
+            <img src="/assets/img/Hash.png" alt="Hash">
+          </a>
+          <a href="/filas"
+            class="bg-violet-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-violet-600 ">
+            <div class="bg-violet-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Filas</div>
+            <img src="/assets/img/Fila.png" alt="Filas">
+          </a>
+        </div>
       </div>
 
-      <div class="conceito-2 bg-light-dark">
-        <h2 class="h2-style dark-light">O que é uma estrutura de dados?</h2>
-        <p class="paragrafo-style dark-light">
-          1. LIFO (Last In, First Out):
-          <br>Funciona como uma pilha de pratos.
-          <br>O último elemento adicionado é o primeiro a ser removido.
-          <br>É útil para rastrear a ordem em que as coisas acontecem, como desfazer ações.
-          <br>2. FIFO (First In, First Out):
-          <br>Segue a lógica de uma fila, como esperar em uma fila.
-          <br>O primeiro elemento adicionado é o primeiro a ser removido.
-          <br>É usado quando a ordem de chegada é importante, como em simulações de processos ou tarefas em fila.
-        </p>
-      </div>
-    </div>
-  </div>
+      <!-- Footer-->
+      <footer>
+        <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
 
-  <!-- Cards -->
-  <div class="flex-col my-11 font-montserrat">
-    <div class="mb-8 flex gap-2 text-4xl justify-center font-bold">
-      <h2 class="text-zinc-900 dark-light">Estruturas de</h2>
-      <h2 class="text-rose-500">Dados</h2>
+          <a href="/sobre" class="text-footer">
+            Sobre
+          </a>
+          <a href="/sobre" class="text-footer">
+            Equipe
+          </a>
+          <a href="/sobre" class="text-footer">
+            Termos de Uso
+          </a>
+        </div>
+      </footer>
     </div>
-    <div id="display-cards" class="grid grid-cols-4 gap-8 justify-items-center mx-7">
-      <a href="/assets/html/pilhas.html"
-        class="bg-amber-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-amber-600">
-        <div class="bg-amber-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Pilhas</div>
-        <img src="/assets/img/Pilhas.png" alt="Pilhas">
-      </a>
-      <a href="/assets/html/heaps.html"
-        class="bg-violet-500  text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-violet-600">
-        <div class="bg-violet-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Heaps</div>
-        <img src="/assets/img/Heaps.png" alt="Heaps">
-      </a>
-      <a href="/assets/html/vetor.html"
-        class="bg-teal-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-teal-600">
-        <div class="bg-teal-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Vetores</div>
-        <img src="/assets/img/Vetor.png" alt="Vetores">
-      </a>
-      <a href="/assets/html/listas.html"
-        class="bg-rose-400 h-60 w-full text-slate-100 grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-rose-500">
-        <div class="bg-rose-500 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Listas</div>
-        <img src="/assets/img/Listas.png" alt="Listas">
-      </a>
-      <a href="/assets/html/grafos.html"
-        class="bg-teal-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-teal-600">
-        <div class="bg-teal-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Grafos</div>
-        <img src="/assets/img/Grafos.png" alt="Grafos">
-      </a>
-      <a href="/arvores"
-        class="bg-rose-400 h-60 w-full text-slate-100 grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-rose-500">
-        <div class="bg-rose-500 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Árvores</div>
-        <img src="/assets/img/Arvore.png" alt="Árvores">
-      </a>
-      <a href="/hashtables"
-        class="bg-amber-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-amber-600">
-        <div class="bg-amber-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Hash Tables</div>
-        <img src="/assets/img/Hash.png" alt="Hash">
-      </a>
-      <a href="/filas"
-        class="bg-violet-500 text-slate-100  w-full grid grid-cols-1 justify-items-center rounded-md hover:shadow-md hover:border-2 border-violet-600 ">
-        <div class="bg-violet-600 w-full h-10 flex justify-around pt-2 rounded-md light-dark">Filas</div>
-        <img src="/assets/img/Fila.png" alt="Filas">
-      </a>
-    </div>
-  </div>
-
-  <!-- Footer-->
-  <footer>
-    <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
-
-      <a href="/sobre" class="text-footer">
-          Sobre
-      </a>
-      <a href="/sobre" class="text-footer">
-          Equipe
-      </a>
-      <a href="/sobre" class="text-footer">
-          Termos de Uso
-      </a>
-  </div>
-  </footer>
-  </div>
   </div>
   <script type="text/javascript" src="/assets/script/index.js"></script>
 </body>

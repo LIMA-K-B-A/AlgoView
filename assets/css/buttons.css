@@ -14,24 +14,27 @@ button {
 }
 
 #inserirBtn {
-  background-color: #EE577C; /* Rosa */
+  background-color: #EE577C;
+  /* Rosa */
   color: white;
 }
 
 #removerBtn {
-  background-color: #19B39A; /* Verde */
+  background-color: #19B39A;
+  /* Verde */
   color: white;
 }
 
 #procurarBtn {
-  background-color: #9655B4; /* Lilás */
+  background-color: #9655B4;
+  /* Lilás */
   color: white;
 }
 
-  .stack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
