@@ -16,7 +16,6 @@
 
 <body>
     <!-- Navbar -->
-    <script type="text/javascript" src="/assets/script/heaps.js"></script>
     <header>
         <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
             <a href='/assets/html/index.html'>
@@ -37,52 +36,54 @@
     <body>
         <div id="page-container">
             <div id="content-wrap">
+
                 <h1 class="titulo">Estrutura de Dados: Heaps</h1>
                 <div class="flex items-center justify-center">
-                    <img src="/assets/img/Heaps-1.png" alt="Heaps" width="400" height="500">
+                    <img class="heaps-img" src="/assets/img/Heaps-1.png" alt="Heaps" width="400" height="500">
                 </div>
-            </div>
 
-            <div class="paragrafo">
-                <h2 class="h2-style">Sobre os Heaps</h2>
-                <p>
-                    Pilhas em programação são como empilhar pratos. Você adiciona um novo prato no topo e sempre pega o
-                    prato do topo. Isso segue o princípio "último a entrar, primeiro a sair" (LIFO). Em programação,
-                    usamos pilhas para coisas como desfazer ações, onde queremos voltar à última ação realizada. Elas
-                    são úteis quando a ordem inversa de processamento é importante. Por exemplo, se você está fazendo
-                    uma lista e quer retirar o último item que adicionou, uma pilha seria útil. Basicamente, pilhas são
-                    como uma pilha de pratos onde você sempre mexe no último prato que colocou
-                </p>
-            </div>
 
-            <div class="estruturaHeaps">
-                <div class="buttons">
-                    <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
-                    <button id="removerBtn" onclick="removerElemento()">Remover</button>
-                    <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
+                <div class="paragrafo">
+                    <h2 class="h2-style">Sobre os Heaps</h2>
+                    <p>
+                        Pilhas em programação são como empilhar pratos. Você adiciona um novo prato no topo e sempre
+                        pega o prato do topo. Isso segue o princípio "último a entrar, primeiro a sair" (LIFO). Em
+                        programação, usamos pilhas para coisas como desfazer ações, onde queremos voltar à última ação
+                        realizada. Elas são úteis quando a ordem inversa de processamento é importante. Por exemplo, se
+                        você está fazendo uma lista e quer retirar o último item que adicionou, uma pilha seria útil.
+                        Basicamente, pilhas são como uma pilha de pratos onde você sempre mexe no último prato que
+                        colocou
+                    </p>
                 </div>
-                <div class="stack" id="stack"></div>
-            </div>
 
-            <!-- Footer-->
-            <footer>
-                <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
-
-                    <a href="/sobre" class="text-footer">
-                        Sobre
-                    </a>
-                    <a href="/sobre" class="text-footer">
-                        Equipe
-                    </a>
-                    <a href="/sobre" class="text-footer">
-                        Termos de Uso
-                    </a>
+                <div class="estruturaHeaps">
+                    <div class="buttons">
+                        <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
+                        <button id="removerBtn" onclick="removerElemento()">Remover</button>
+                        <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
+                    </div>
+                    <div class="stack" id="stack"></div>
                 </div>
-            </footer>
+
+                <!-- Footer-->
+                <footer>
+                    <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
+
+                        <a href="/sobre" class="text-footer">
+                            Sobre
+                        </a>
+                        <a href="/sobre" class="text-footer">
+                            Equipe
+                        </a>
+                        <a href="/sobre" class="text-footer">
+                            Termos de Uso
+                        </a>
+                    </div>
+                </footer>
+            </div>
         </div>
-        </div>
 
-        <script src="/assets/script/heaps.js"></script>
+        <script type="text/javascript" src="/assets/script/heaps.js"></script>
     </body>
 
 </html>
