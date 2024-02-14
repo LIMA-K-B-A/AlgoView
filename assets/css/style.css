@@ -86,3 +86,28 @@
     font-size: 18px;
     font-family: 'Montserrat', sans-serif; /* Corrigi a propriedade font-family */
   }
+  
+/* Estilização dos quadrados/blocos vinculados ao .HTML de vetor, pilhas e etc..*/
+  .Quadrado-Amarelo {
+    color: #211E1E;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F0A941;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+  }
+
+/* Estilização dos quadrados/blocos de vetor e Listas para deixa-los em linha horizontal*/
+  .amostraHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
