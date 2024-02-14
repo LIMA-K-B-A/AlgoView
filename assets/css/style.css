@@ -149,6 +149,13 @@
     justify-content: center;
     font-family: Montserrat;
   }
+  
+/* Estilização dos quadrados/blocos de vetor e Listas para deixa-los em linha vertical*/
+  .amostraVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 /* Estilização dos quadrados/blocos de vetor e Listas para deixa-los em linha horizontal*/
   .amostraHorizontal {
