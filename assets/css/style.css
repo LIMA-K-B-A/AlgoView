@@ -1,3 +1,52 @@
+:root {
+  /* Light */
+  --color-light-50: #f8fafc;
+
+  /* Dark */
+  --color-dark-50: #797984;
+  --color-dark-100: #242424;
+  --color-dark-900: #000;
+}
+
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Mode */
+.dark#index_page {
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#index_page .dark-light {
+  color: var(--color-light-50);
+}
+
+.dark#index_page .light-dark {
+  color: var(--color-dark-900);
+}
+
+.dark#index_page .bg-light-dark {
+  background-color: var(--color-dark-100);
+}
+
+.dark#index_page .bg-dark-light {
+  background-color: var(--color-light-50);
+}
+
+/* Estilização da Scrollbar do Site*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #EE577C;
+}
+
 /* Estilização do titulo das páginas, exemplo: 'Estrutura de Dados:' */
 .titulo {
     margin-top: 60px;
@@ -12,7 +61,6 @@
     padding: 20px;
     border-radius: 15px;
     border: 1px solid #d1d1d1;
-    background: #FFF;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
     font-family: Montserrat;
     font-size: 18px;
@@ -23,7 +71,6 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    color: #000;
     font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
@@ -89,7 +136,6 @@
   
 /* Estilização dos quadrados/blocos vinculados ao .HTML de vetor, pilhas e etc..*/
   .Quadrado-Amarelo {
-    color: #211E1E;
     font-size: 18px;
     margin-top: 10px;
     margin-left: 20px;

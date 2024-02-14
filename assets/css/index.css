@@ -1,46 +1,6 @@
 @import url(/assets/css/style.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 
-:root {
-  /* Light */
-  --color-light-50: #f8fafc;
-
-  /* Dark */
-  --color-dark-50: #797984;
-  --color-dark-100: #242424;
-  --color-dark-900: #000;
-}
-
-/* Geral */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Dark Mode */
-.dark#index_page {
-  color: var(--color-light-50);
-  background-color: var(--color-dark-100);
-  animation: light-to-dark-background 0.3s ease-in-out;
-}
-
-.dark#index_page .dark-light {
-  color: var(--color-light-50);
-}
-
-.dark#index_page .light-dark {
-  color: var(--color-dark-900);
-}
-
-.dark#index_page .bg-light-dark {
-  background-color: var(--color-dark-100);
-}
-
-.dark#index_page .bg-dark-light {
-  background-color: var(--color-light-50);
-}
-
 .banner {
   width: 100%;
   height: auto;
