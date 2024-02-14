@@ -18,7 +18,7 @@ function atualizarPilha() {
 
         const pointer = document.createElement('div');
         pointer.classList.add('ponteiro');
-        pointer.innerText = 'ponteiro';
+        pointer.innerText = 'Ponteiro';
         groupDiv.appendChild(pointer);
 
         const arrow = document.createElement('img');

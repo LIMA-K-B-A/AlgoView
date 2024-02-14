@@ -9,6 +9,7 @@
 @import url(/assets/css/buttons.css);
 @import url(/assets/css/sobre.css);
 @import url(/assets/css/square.css);
+@import url(/assets/css/titulo.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 
 :root {
@@ -85,6 +86,17 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
 }
 
+.estrutura-style{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
 .paragrafo-style {
   padding: 25px;

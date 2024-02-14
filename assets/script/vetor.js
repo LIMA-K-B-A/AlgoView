@@ -1,7 +1,7 @@
 const vector = [];
 
 function atualizarVetor() {
-  const vectorDiv = document.getElementById('vector');
+  const vectorDiv = document.getElementById('vetor');
   vectorDiv.innerHTML = '';
 
   for (let i = 0; i < vector.length; i++) {
