@@ -48,7 +48,7 @@ function removerElemento() {
     } else {
         alert('A fila está vazia!');
     }
-}
+} 
 
 // Função para procurar um elemento na fila
 function procurarElemento() {

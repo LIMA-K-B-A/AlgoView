@@ -8,7 +8,7 @@ modeButton.addEventListener('click', () => {
         modeIcon.classList.remove('fa-moon');
         modeIcon.classList.add('fa-sun');
 
-        body.classList.add('dark');
+        body.classList.add('dark'); 
     } else {
         modeIcon.classList.remove('fa-sun');
         modeIcon.classList.add('fa-moon');
