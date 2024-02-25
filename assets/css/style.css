@@ -1,0 +1,166 @@
+:root {
+  /* Light */
+  --color-light-50: #f8fafc;
+
+  /* Dark */
+  --color-dark-50: #797984;
+  --color-dark-100: #242424;
+  --color-dark-900: #000;
+}
+
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark Mode */
+.dark#index_page {
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#index_page .dark-light {
+  color: var(--color-light-50);
+}
+
+.dark#index_page .light-dark {
+  color: var(--color-dark-900);
+}
+
+.dark#index_page .bg-light-dark {
+  background-color: var(--color-dark-100);
+}
+
+.dark#index_page .bg-dark-light {
+  background-color: var(--color-light-50);
+}
+
+/* Estilização da Scrollbar do Site*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #EE577C;
+}
+
+/* Estilização do titulo das páginas, exemplo: 'Estrutura de Dados:' */
+.titulo {
+    margin-top: 60px;
+    font-size: 40px;
+  }
+
+/* Estilização do sobre das páginas */
+  .paragrafo {
+    width: auto;
+    height: auto;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+  }
+  
+  .h2-style {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+/* Estilização dos botões 'Inserir, Remover e Procurar' das páginas */
+  .buttons {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+    font-family: Montserrat;
+  }
+  
+  #inserirBtn {
+    background-color: #EE577C;
+    /* Rosa */
+    color: white;
+  }
+  
+  #removerBtn {
+    background-color: #19B39A;
+    /* Verde */
+    color: white;
+  }
+  
+  #procurarBtn {
+    background-color: #9655B4;
+    /* Lilás */
+    color: white;
+  }
+  
+  .stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+/* Estilização dos quadrados/blocos vinculados ao .JS de vetor, pilhas e etc..*/
+  .square {
+    width: 70px;
+    height: 70px;
+    background-color: #F0A941;
+    margin: 5px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif; /* Corrigi a propriedade font-family */
+  }
+  
+/* Estilização dos quadrados/blocos vinculados ao .HTML de vetor, pilhas e etc..*/
+  .Quadrado-Amarelo {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F0A941;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+  }
+  
+/* Estilização dos quadrados/blocos de vetor e Listas para deixa-los em linha vertical*/
+  .amostraVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* Estilização dos quadrados/blocos de vetor e Listas para deixa-los em linha horizontal*/
+  .amostraHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }

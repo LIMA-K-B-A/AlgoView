@@ -1,0 +1,63 @@
+.estruturaListas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#outraPilha {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.listas {
+  color: #211E1E;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F0A941;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.ponteiro {
+  color: #211E1E;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 95px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F0A941;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+}
+
+.arrow {
+  display: flex;
+  width: 60%;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 10px;
+}

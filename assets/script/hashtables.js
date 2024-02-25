@@ -27,8 +27,24 @@ function atualizarHashTable() {
 
     for (let key in hashTable) {
         const square = document.createElement('div');
-        square.classList.add('square');
-        square.textContent = `${key}: ${hashTable[key]}`;
+        square.classList.add('key');
+
+        const keySpan = document.createElement('div');
+        keySpan.classList.add('square');
+        keySpan.textContent = key;
+
+        const arrow = document.createElement('img');
+        arrow.classList.add('arrow');
+        arrow.src = "/assets/img/Arrow.svg";
+
+        const valueSpan = document.createElement('div');
+        valueSpan.classList.add('square');
+        valueSpan.textContent = hashTable[key];
+
+        square.appendChild(valueSpan);
+        square.appendChild(arrow);
+        square.appendChild(keySpan);
+
         hashTableDiv.appendChild(square);
     }
 }

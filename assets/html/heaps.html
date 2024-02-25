@@ -11,7 +11,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="stylesheet" href="/assets/css/hashtables.css">
+    <link rel="stylesheet" href="/assets/css/heaps.css">
 
 </head>
 
@@ -40,35 +40,34 @@
 
                 <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
                     <h1 class="text-zinc-900 dark-light titulo">Estrutura de Dados:</h1>
-                    <h1 class="text-rose-500 titulo">Hash Table</h1>
+                    <h1 class="text-rose-500 titulo">Heaps</h1>
                   </div>
                 <div class="flex items-center justify-center">
-                    <img class="heaps-img" src="/assets/img/HashTable.png" alt="Hash" width="400" height="500">
+                    <img class="heaps-img" src="/assets/img/Heaps-1.png" alt="Heaps" width="400" height="500">
                 </div>
 
 
                 <div class="paragrafo">
-                    <h2 class="h2-style">Sobre as Hash Tables</h2>
+                    <h2 class="h2-style">Sobre os Heaps</h2>
                     <p>
-                        Hash tables em programação são como tabelas mágicas. Você insere um novo par chave-valor e
-                        sempre recupera o valor associado à chave. Isso segue o princípio de mapeamento único entre
-                        chaves e valores. Em programação, usamos hash tables para buscar eficientemente dados associados
-                        a uma chave específica. Elas são úteis quando a busca rápida e o acesso direto aos dados são
-                        essenciais. Por exemplo, se você está construindo um sistema de cache e deseja recuperar
-                        rapidamente os dados armazenados para uma determinada chave, uma hash table seria eficaz.
-                        Basicamente, hash tables são como tabelas mágicas onde você insere informações e sempre recupera
-                        os dados associados através de uma chave única.
+                        Heaps em programação são como filas de prioridade. 
+                        Cada elemento possui uma prioridade associada e é organizado 
+                        de forma a garantir que o elemento de maior prioridade esteja 
+                        sempre no topo. Essa estrutura segue o princípio "primeiro a entrar, 
+                        primeiro a sair" (FIFO) com base na prioridade. Heaps são úteis para 
+                        tarefas que exigem processamento por ordem de importância, como algoritmos 
+                        de busca e ordenação. Funcionam de maneira eficiente para adição, 
+                        remoção e consulta do elemento prioritário. Em suma, heaps oferecem 
+                        uma maneira eficaz de gerenciar e acessar elementos com base em suas 
+                        prioridades.
                     </p>
-                </div> 
+                </div>
 
-                <div class="estruturaHash">
+                <div class="estruturaHeaps">
                     <div class="buttons">
                         <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
                         <button id="removerBtn" onclick="removerElemento()">Remover</button>
                         <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
-                    </div>
-                    <div class="texto-tabela">
-                    <h1>Valor</h1> <h1>Chave</h1>
                     </div>
                     <div class="stack" id="stack"></div>
                 </div>
@@ -91,7 +90,7 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="/assets/script/hashtables.js"></script>
+        <script type="text/javascript" src="/assets/script/heaps.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgoView</title>
+  <link rel="icon" href="/assets/img/logo_av.png" type="image/x-icon">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/pilhas.css">
+
+</head>
+
+<body id="index_page">
+  <!-- Navbar -->
+  <header>
+    <div class="px-5 py-5 bg-zinc-800 text-slate-100 justify-between flex font-montserrat shadow-md shadow-black">
+      <a href='/index.html'>
+        <div class='flex text-4xl font-bold'>
+          <h1>Algo</h1>
+          <h1 class='text-rose-500'>View</h1>
+        </div>
+      </a>
+      <div class='flex gap-5'>
+        <button id="mode_button" class='p-1 h-10 w-9 text-zinc-900 bg-slate-100 rounded-lg hover:bg-slate-400'>
+          <i id="mode_icon" class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+
+        <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
+          <h1 class="text-zinc-900 dark-light titulo">Estrutura de Dados:</h1>
+          <h1 class="text-rose-500 titulo">Pilhas</h1>
+        </div>
+        <div class="amostraVertical">
+          <div class="Quadrado-Amarelo ">1</div>
+          <div class="Quadrado-Amarelo ">2</div>
+          <div class="Quadrado-Amarelo ">3</div>
+          <div class="Quadrado-Amarelo ">4</div>
+        </div>
+
+        <div class="paragrafo">
+          <h2 class="h2-style">Sobre as Pilhas</h2>
+          <p>
+            Pilhas em programação são como empilhar pratos. Você adiciona um
+            novo prato no topo e sempre pega o prato do topo. Isso segue o
+            princípio "último a entrar, primeiro a sair" (LIFO). Em programação,
+            usamos pilhas para coisas como desfazer ações, onde queremos voltar
+            à última ação realizada. Elas são úteis quando a ordem inversa de
+            processamento é importante. Por exemplo, se você está fazendo uma
+            lista e quer retirar o último item que adicionou, uma pilha seria
+            útil. Basicamente, pilhas são como uma pilha de pratos onde você
+            sempre mexe no último prato que colocou
+          </p>
+        </div>
+
+        <div class="estruturaPilhas">
+          <div class="buttons">
+            <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
+            <button id="removerBtn" onclick="removerElemento()">Remover</button>
+            <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
+          </div>
+          <div class="stack" id="stack"></div>
+        </div>
+
+        <!-- Footer-->
+        <footer>
+          <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
+
+            <a href="/sobre" class="text-footer">
+              Sobre
+            </a>
+            <a href="/sobre" class="text-footer">
+              Equipe
+            </a>
+            <a href="/sobre" class="text-footer">
+              Termos de Uso
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/assets/script/pilhas.js"></script>
+  </body>
+
+</html>
