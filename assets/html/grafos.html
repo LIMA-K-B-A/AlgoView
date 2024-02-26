@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/grafos.css">
+
 </head>
+
 <body id="index_page">
     <!-- Navbar -->
     <header>
@@ -30,57 +33,56 @@
         </div>
     </header>
 
-    <div id="page-container" class="page-container">
-        <div id="content-wrap">
 
-            <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
-                <h1 class="text-zinc-900 dark-light titulo">Estrutura de Dados:</h1>
-                <h1 class="text-rose-500 titulo">Grafos</h1>
-            </div>
-            <div class="flex items-center justify-center">
-                <img class="heaps-img" src="/assets/img/Heaps-1.png" alt="Grafos" width="400" height="500">
-            </div>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
 
-            <div class="paragrafo">
-                <h2 class="h2-style">Sobre os Grafos</h2>
-                <p>
-                    Grafos em programação são como mapas de conexões entre pontos.
-                     Cada ponto é um nó, e as conexões são arestas que os ligam. Podem
-                      representar redes sociais, rotas de viagem, entre outros. Utilizamos 
-                      grafos para resolver problemas de caminho mais curto, encontrar padrões de 
-                      conexão e modelar sistemas complexos. São úteis quando a relação entre 
-                      elementos é crucial. Por exemplo, para navegar de uma cidade para outra, 
-                      um grafo de rotas seria útil. Em suma, grafos fornecem uma estrutura poderosa 
-                      para representar e resolver problemas baseados em relações.
-                </p>
-            </div>
-            <div id="graph-container" class='caixaDeTexto'></div>
-<div>
-  <button id='menu-button' onclick="toggleMenu()" >Acesse o Menu</button>
-  <div id="menu" class="menu" style="display: none;">
-    <div class='menu-section'>
-      <button class='buttonInteraction' onclick="handleOperationClick('Gerar Grafo Aleatório')">Gerar Grafo Aleatório</button>
-      <button class='buttonInteraction' onclick="handleOperationClick('Gerar Grafo Específico')">Gerar Grafo Específico</button>
-      <button class='buttonInteraction' onclick="handleOperationClick('Limpar Grafo')">Limpar Grafo</button>
-    </div>
-  </div>
-</div>
+                <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
+                    <h1 class="text-zinc-900 dark-light titulo">Estrutura de Dados:</h1>
+                    <h1 class="text-rose-500 titulo">Grafos</h1>
+                  </div>
+                <div class="flex items-center justify-center">
+                    <img class="heaps-img" src="/assets/img/grafos.png" alt="Árvores" width="400" height="500">
+                </div>
 
-                
+
+                <div class="paragrafo">
+                    <h2 class="h2-style">Sobre os Grafos</h2>
+                    <p>
+                        Grafos em programação são como mapas de conexões entre pontos.
+                        Cada ponto é um nó, e as conexões são arestas que os ligam. Podem
+                        representar redes sociais, rotas de viagem, entre outros. Utilizamos
+                        grafos para resolver problemas de caminho mais curto, encontrar padrões de
+                        conexão e modelar sistemas complexos. São úteis quando a relação entre
+                        elementos é crucial. Por exemplo, para navegar de uma cidade para outra,
+                        um grafo de rotas seria útil. Em suma, grafos fornecem uma estrutura poderosa
+                        para representar e resolver problemas baseados em relações.
+                    </p>
+                </div>
+    
+
+                <!-- Footer-->
+                <footer>
+                    <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
+            
+                        <a href="/assets/html/equipe.html" class="text-footer">
+                            Sobre
+                        </a>
+                        <a href="/assets/html/equipe.html" class="text-footer">
+                            Equipe
+                        </a>
+                        <a href="/assets/html/equipe.html" class="text-footer">
+                            Termos de Uso
+                        </a>
+                    </div>
+                </footer>
             
             </div>
         </div>
-    </div>
 
-    <!-- Footer-->
-    <footer class="footer">
-        <div class="bg-zinc-800 text-slate-100 gap-8 font-montserrat">
-            <a href="/sobre" class="text-footer">Sobre</a>
-            <a href="/sobre" class="text-footer">Equipe</a>
-            <a href="/sobre" class="text-footer">Termos de Uso</a>
-        </div>
-    </footer>
+        <script type="text/javascript" src="/assets/script/arvores.js"></script>
+    </body>
 
-    <script type="text/javascript" src="/assets/script/grafos.js"></script>
-</body>
 </html>
+
