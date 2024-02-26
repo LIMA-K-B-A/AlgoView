@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/grafos.css">
-
 </head>
-
 <body id="index_page">
     <!-- Navbar -->
     <header>
@@ -33,61 +30,47 @@
         </div>
     </header>
 
+    <div id="page-container" class="page-container">
+        <div id="content-wrap">
 
-    <body>
-        <div id="page-container">
-            <div id="content-wrap">
-
-                <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
-                    <h1 class="text-zinc-900 dark-light titulo">Estrutura de Dados:</h1>
-                    <h1 class="text-rose-500 titulo">Grafos</h1>
-                </div>
-                <div class="flex items-center justify-center">
-                    <img class="heaps-img" src="/assets/img/Heaps-1.png" alt="Grafos" width="400" height="500">
-                </div>
-
-
-                <div class="paragrafo">
-                    <h2 class="h2-style">Sobre os Grafos</h2>
-                    <p>
-                        Pilhas em programação são como empilhar pratos. Você adiciona um novo prato no topo e sempre
-                        pega o prato do topo. Isso segue o princípio "último a entrar, primeiro a sair" (LIFO). Em
-                        programação, usamos pilhas para coisas como desfazer ações, onde queremos voltar à última ação
-                        realizada. Elas são úteis quando a ordem inversa de processamento é importante. Por exemplo, se
-                        você está fazendo uma lista e quer retirar o último item que adicionou, uma pilha seria útil.
-                        Basicamente, pilhas são como uma pilha de pratos onde você sempre mexe no último prato que
-                        colocou
-                    </p>
-                </div>
-
-                <div class="estruturaGrafos">
-                    <div class="buttons">
-                        <button id="inserirBtn" onclick="inserirElemento()">Inserir</button>
-                        <button id="removerBtn" onclick="removerElemento()">Remover</button>
-                        <button id="procurarBtn" onclick="procurarElemento()">Procurar</button>
-                    </div>
-                    <div class="stack" id="stack"></div>
-                </div>
-
-                <!-- Footer-->
-                <footer>
-                    <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
-
-                        <a href="/sobre" class="text-footer">
-                            Sobre
-                        </a>
-                        <a href="/sobre" class="text-footer">
-                            Equipe
-                        </a>
-                        <a href="/sobre" class="text-footer">
-                            Termos de Uso
-                        </a>
-                    </div>
-                </footer>
+            <div class="mb-8 flex gap-2 text-4xl justify-center font-montserrat font-bold">
+                <h1 class="text-zinc-900 dark-light titulo">Estrutura de Dados:</h1>
+                <h1 class="text-rose-500 titulo">Grafos</h1>
             </div>
+            <div class="flex items-center justify-center">
+                <img class="heaps-img" src="/assets/img/Heaps-1.png" alt="Grafos" width="400" height="500">
+            </div>
+
+            <div class="paragrafo">
+                <h2 class="h2-style">Sobre os Grafos</h2>
+                <p>
+                    Grafos em programação são como mapas de conexões entre pontos.
+                     Cada ponto é um nó, e as conexões são arestas que os ligam. Podem
+                      representar redes sociais, rotas de viagem, entre outros. Utilizamos 
+                      grafos para resolver problemas de caminho mais curto, encontrar padrões de 
+                      conexão e modelar sistemas complexos. São úteis quando a relação entre 
+                      elementos é crucial. Por exemplo, para navegar de uma cidade para outra, 
+                      um grafo de rotas seria útil. Em suma, grafos fornecem uma estrutura poderosa 
+                      para representar e resolver problemas baseados em relações.
+                </p>
+            
+
+     <!-- Footer-->
+     <footer class="footer_equipe">
+        <div class="footer bg-zinc-800 text-slate-100 gap-8 font-montserrat">
+
+            <a href="/assets/html/equipe.html" class="text-footer">
+                Sobre
+            </a>
+            <a href="/assets/html/equipe.html" class="text-footer">
+                Equipe
+            </a>
+            <a href="/assets/html/equipe.html" class="text-footer">
+                Termos de Uso
+            </a>
         </div>
+    </footer>
 
-        <script type="text/javascript" src="/assets/script/grafos.js"></script>
-    </body>
-
+    <script type="text/javascript" src="/assets/script/grafos.js"></script>
+</body>
 </html>

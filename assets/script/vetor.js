@@ -51,7 +51,7 @@ function procurarElemento() {
   const index = vector.indexOf(parseInt(elementoProcurado));
 
   if (index !== -1) {
-    alert(`Elemento ${elementoProcurado} encontrado na posição ${index + 1}`);
+    alert(`Elemento ${elementoProcurado} encontrado na posição ${index}`);
   } else {
     alert(`Elemento ${elementoProcurado} não encontrado no vetor.`);
   }

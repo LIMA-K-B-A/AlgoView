@@ -4,3 +4,292 @@
     align-items: center;
     margin-top: 20px;
 }
+
+.arrow1 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 146%;
+    left: 57%;
+    transform: rotate(20deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow2 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 146%;
+    left: 42%;
+    transform: rotate(160deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow3 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 160%;
+    left: 30%;
+    transform: rotate(140deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow4 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 160%;
+    left: 40%;
+    transform: rotate(40deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow5 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 175%;
+    left: 20%;
+    transform: rotate(140deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+
+
+.arrow7 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 175%;
+    left: 40%;
+    transform: rotate(140deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow8 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 175%;
+    left: 49%;
+    transform: rotate(40deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow9 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 160%;
+    left: 59%;
+    transform: rotate(140deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow10 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 160%;
+    left: 70%;
+    transform: rotate(40deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow11 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 175%;
+    left: 59%;
+    transform: rotate(40deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow12 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 146%;
+    left: 42%;
+    transform: rotate(160deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+.arrow13 {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 10%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; /* Alterado de relativa para absoluta */
+    top: 175%;
+    left: 80%;
+    transform: rotate(40deg);
+    margin-right: 10px; /* Adicionando margem à direita para separar os elementos */
+}
+
+
+
+
+.btnNode {
+    /* Estilos comuns para os botões de nó */
+    position: absolute;
+    padding: 10px 20px 10px 20px;
+    font-size: max(15px, 2vh);
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+    transition: 500ms;
+    border: none;
+}
+
+.Nodearvores {
+    display: flex;
+    flex-direction: column;
+  
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    min-height: 400px; /* Altura mínima para acomodar todos os botões */
+}
+
+
+.Nodearvores h2 {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: montserrat;
+    margin: 20px;
+}
+.Nodearvores-numeros{
+    left: 600px;
+}
+
+.btnNode:hover {
+    /* Efeito de hover nos botões de nó */
+    opacity: .8;
+    box-shadow: .2vh .2vh 1vh #0000007e;
+}
+
+.mainNode {
+    background-color: #F0A941;
+    left: 50%
+}
+
+.num5 {
+    background-color: #A261C0;
+    left: 35%;
+    top: 125px;
+}
+
+.num15{
+    background-color: #A261C0;
+    left: 65%;
+    top: 125px;
+}
+
+.num2{
+    background-color: #18B299;
+    left: 25%;
+    top: 235px;
+}
+
+.num6{
+    background-color: #18B299;
+    left: 45%;
+    top: 235px;
+}
+
+.num1 {
+    background-color: #FA6388;
+    left: 15%;
+    top: 335px;
+}
+
+.num4 {
+    background-color: #FA6388;
+    left: 36%;
+    top: 335px;
+}
+.num3 {
+    background-color: #FA6388;
+    left: 53%;
+    top: 335px;
+}
+.num11 {
+    background-color: #18B299;
+    left: 55%;
+    top: 235px;
+}
+
+.num14 {
+    background-color: #18B299;
+    left: 76%;
+    top: 235px;
+}
+
+.num13{
+    background-color: #FA6388;
+    left: 64%;
+    top: 335px;
+}
+
+.num12 {
+    background-color: #FA6388;
+    left: 85%;
+    top: 335px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+

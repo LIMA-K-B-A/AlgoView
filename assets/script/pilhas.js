@@ -51,7 +51,7 @@ const stack = [];
     const index = stack.indexOf(parseInt(elementoProcurado));
 
     if (index !== -1) {
-      alert(`Elemento ${elementoProcurado} encontrado na posição ${index + 1}`);
+      alert(`Elemento ${elementoProcurado} encontrado na posição ${index}`);
     } else {
       alert(`Elemento ${elementoProcurado} não encontrado na pilha.`);
     }
